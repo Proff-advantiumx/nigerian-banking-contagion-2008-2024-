@@ -45,6 +45,7 @@ The following are explicitly designated future work and are not implemented here
 Known data limitations: the common sample begins in March 2012 pending the NGX historical data purchase for 2008–2012; NGX equities exhibit thin trading (10–15% zero-return days) and daily price limits (±10%) that censor extreme single-day returns; one candidate unadjusted corporate action (UBA, 2016-03-30) is under verification against NGX disclosures.
 
 Project status
+
 [x] Data acquisition and validation (five banks, 2012–2024)
 [ ] NGX historical extension (2008–2012) — requested
 [ ] Univariate GARCH(1,1) estimation per bank
