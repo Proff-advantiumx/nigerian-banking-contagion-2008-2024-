@@ -1,0 +1,169 @@
+NGX D-SIB DATA QUALITY REPORT
+Sample window requested: 2008-01-01 to 2024-12-31
+Banks with data: ['FIRSTBANK', 'GTB', 'ACCESS', 'ZENITH', 'UBA']
+Common (all-bank) return observations: 3151, spanning 2012-03-07 -> 2024-12-31
+NOTE: the DCC-GARCH stage requires a common sample; if one bank starts late, the whole common sample starts late.
+
+==========================================================================
+BANK: FIRSTBANK
+==========================================================================
+  loaded fbnh.csv                     FBNH / FIRSTHOLDCO           2012-01-31 -> 2024-12-31  (3194 rows)
+  known corporate event: 2012-11-26 FBN Holdings relisting (share-for-share holdco)
+
+  Coverage: 2012-01-31 -> 2024-12-31   (3194 trading days)
+  ** WARNING: series starts 2012-01-31 — regime 1 (2008-09 GFC) is not fully covered. You need earlier data from NGX or another source. **
+  Trading days per year (NGX full year is roughly 240-250):
+    2012:  224
+    2013:  248
+    2014:  247
+    2015:  247
+    2016:  247
+    2017:  247
+    2018:  248
+    2019:  247
+    2020:  249
+    2021:  248
+    2022:  248
+    2023:  246
+    2024:  248
+
+  Longest weekday gap: 3 business days (holidays account for small gaps; nothing alarming)
+
+  Zero-return days: 490 of 3193 (15.3%)
+  Runs of >= 5 consecutive zero returns: 8
+  Longest zero-return run: 9 days, ending 2022-01-21
+  Highest zero-return share by year: 2022: 30%, 2021: 30%, 2020: 27%
+
+  |log return| >= 20%: 0 day(s)
+
+==========================================================================
+BANK: GTB
+==========================================================================
+  loaded gtco.csv                     GUARANTY/GTCO (continuous file) 2012-02-08 -> 2024-12-31  (3189 rows)
+  known corporate event: 2021-07-01 GTCO holdco restructuring (approx.)
+
+  Coverage: 2012-02-08 -> 2024-12-31   (3189 trading days)
+  ** WARNING: series starts 2012-02-08 — regime 1 (2008-09 GFC) is not fully covered. You need earlier data from NGX or another source. **
+  Trading days per year (NGX full year is roughly 240-250):
+    2012:  222
+    2013:  248
+    2014:  248
+    2015:  247
+    2016:  247
+    2017:  247
+    2018:  248
+    2019:  247
+    2020:  249
+    2021:  244
+    2022:  248
+    2023:  246
+    2024:  248
+
+  Longest weekday gap: 4 business days (holidays account for small gaps; nothing alarming)
+
+  Zero-return days: 329 of 3188 (10.3%)
+  Runs of >= 5 consecutive zero returns: 1
+  Longest zero-return run: 5 days, ending 2012-08-13
+  Highest zero-return share by year: 2022: 18%, 2021: 16%, 2019: 15%
+
+  |log return| >= 20%: 0 day(s)
+
+==========================================================================
+BANK: ACCESS
+==========================================================================
+  loaded access.csv                   ACCESS (pre-holdco)          2012-02-29 -> 2022-03-23  (2492 rows)
+  loaded accesscorp.csv               ACCESSCORP                   2022-03-29 -> 2024-12-31  (682 rows)
+    spliced at 2022-03-29 (return on this date will be dropped)
+  known corporate event: 2019-04-01 Diamond Bank merger completion (approx.)
+  known corporate event: 2022-05-03 Access Holdings relisting (approx.)
+
+  Coverage: 2012-02-29 -> 2024-12-31   (3174 trading days)
+  ** WARNING: series starts 2012-02-29 — regime 1 (2008-09 GFC) is not fully covered. You need earlier data from NGX or another source. **
+  Trading days per year (NGX full year is roughly 240-250):
+    2012:  207
+    2013:  248
+    2014:  247
+    2015:  247
+    2016:  247
+    2017:  247
+    2018:  248
+    2019:  247
+    2020:  249
+    2021:  248
+    2022:  245
+    2023:  246
+    2024:  248
+
+  Longest weekday gap: 3 business days (holidays account for small gaps; nothing alarming)
+
+  Zero-return days: 485 of 3172 (15.3%)
+  Runs of >= 5 consecutive zero returns: 3
+  Longest zero-return run: 8 days, ending 2014-09-24
+  Highest zero-return share by year: 2022: 30%, 2021: 28%, 2018: 22%
+
+  |log return| >= 20%: 0 day(s)
+  Splice dates (returns already set to NaN there): 2022-03-29
+
+==========================================================================
+BANK: ZENITH
+==========================================================================
+  loaded zenithbank.csv               ZENITHBANK                   2012-01-23 -> 2024-12-31  (3202 rows)
+
+  Coverage: 2012-01-23 -> 2024-12-31   (3202 trading days)
+  ** WARNING: series starts 2012-01-23 — regime 1 (2008-09 GFC) is not fully covered. You need earlier data from NGX or another source. **
+  Trading days per year (NGX full year is roughly 240-250):
+    2012:  232
+    2013:  248
+    2014:  247
+    2015:  247
+    2016:  247
+    2017:  247
+    2018:  248
+    2019:  247
+    2020:  249
+    2021:  248
+    2022:  248
+    2023:  246
+    2024:  248
+
+  Longest weekday gap: 3 business days (holidays account for small gaps; nothing alarming)
+
+  Zero-return days: 331 of 3201 (10.3%)
+  Runs of >= 5 consecutive zero returns: 1
+  Longest zero-return run: 5 days, ending 2018-01-31
+  Highest zero-return share by year: 2019: 15%, 2021: 15%, 2023: 15%
+
+  |log return| >= 20%: 1 day(s)
+    2020-03-10  -0.261   <-- check NGX notices: bonus issue, rights issue, or reconstruction ex-date? If so, ADJUST, don't drop.
+
+==========================================================================
+BANK: UBA
+==========================================================================
+  loaded uba.csv                      UBA                          2012-03-06 -> 2024-12-31  (3171 rows)
+
+  Coverage: 2012-03-06 -> 2024-12-31   (3171 trading days)
+  ** WARNING: series starts 2012-03-06 — regime 1 (2008-09 GFC) is not fully covered. You need earlier data from NGX or another source. **
+  Trading days per year (NGX full year is roughly 240-250):
+    2012:  203
+    2013:  245
+    2014:  248
+    2015:  247
+    2016:  247
+    2017:  247
+    2018:  248
+    2019:  247
+    2020:  249
+    2021:  248
+    2022:  248
+    2023:  246
+    2024:  248
+
+  Longest weekday gap: 4 business days (holidays account for small gaps; nothing alarming)
+
+  Zero-return days: 454 of 3170 (14.3%)
+  Runs of >= 5 consecutive zero returns: 1
+  Longest zero-return run: 7 days, ending 2023-03-30
+  Highest zero-return share by year: 2021: 25%, 2022: 25%, 2019: 21%
+
+  |log return| >= 20%: 1 day(s)
+    2016-03-30  -0.204   <-- check NGX notices: bonus issue, rights issue, or reconstruction ex-date? If so, ADJUST, don't drop.
