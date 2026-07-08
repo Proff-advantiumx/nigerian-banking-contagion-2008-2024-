@@ -2,7 +2,7 @@
 A Multi-Regime Network Analysis of the Five Domestic Systemically Important Banks (2008–2024)**
 
 
-Samuel Babatunde Folorunsho Ajakaiye --MScFE Candidate WorldQuant University
+Samuel Babatunde Folorunsho Ajakaiye --MScFE Candidate, WorldQuant University
 
 **Project Purpose and Scope**
 This research estimates a time-varying DCC-GARCH interconnectedness network with Delta CoVaR edge weights for the five Nigerian domestic systemically important banks (D-SIBs) — First Bank, GTBank/GTCO, Zenith, Access, and UBA. It tests a fiscal transmission channel linking Brent crude oil prices, monthly Federation Account Allocation Committee (FAAC) disbursements, and CBN external reserves to banking-system connectedness. Five binary institutional controls (the 2009-2011 interbank guarantee, AMCON operations, the multi-window foreign exchange regime, COVID-19 forbearance, and the June 2023 foreign exchange unification) correct for government-intervention bias in observable stress signals.
@@ -38,7 +38,7 @@ CBN external reserves	                                      Central Bank of Nige
 
 **Ticker continuity**: GUARANTY→GTCO (2021 holdco restructuring),
 ACCESS→ACCESSCORP (2022 holdco; Diamond Bank merger 2019), 
-and FIRSTBANK→FBNH→FIRSTHOLDCO are spliced into single continuous series per bank, with the return on each transition date excluded.
+and FIRSTBANK→FBNH→FIRSTHOLDCO are spliced into a single continuous series per bank, with the return on each transition date excluded.
 
 **Model scope boundary statement**
 
